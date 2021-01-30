@@ -43,6 +43,7 @@ app.use( express.urlencoded({ extended: true }) ) // for parsing application/x-w
 //Rutas 
 /**Todo lo que contenga el archivo auth en ./routes podrá ser accesible desde la ruta /api/auth */
 app.use( '/api/auth', require('./routes/auth')); 
+app.use( '/api/event', require('./routes/event')); 
 
 //Rutas app.METHOD('ruta', 'handler o función callback'); cuando son pocas rutas
 /**app.get('/example', (req, res) => {

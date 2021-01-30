@@ -17,6 +17,7 @@ const dbConnect = async() => {
             useUnifiedTopology: true,
             //En consola especifica que la opción useCreateIndex no está soportada
             useCreateIndex: true,//No viene preconfigurada pero es "necesaria"
+            useFindAndModify: false,
         });
 
         console.log('DATABASE CONECTADA');
