@@ -155,7 +155,9 @@ const renovarToken = async(req, res = response) => {
     res.json({
         exito: true,
         msg:'JWT Verificado y regenerado',
-        token
+        token,
+        uid,
+        name
     });
 }
 
